@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main-header {
+            background-color: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77b300 3px solid;
+        }
+        #main-header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        #contact {
+            padding: 30px;
+            background: #fff;
+            margin-top: 30px;
+            border: #ccc 1px solid;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .social a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feel free to reach out to us through any of the following methods:</p>
+            
+            <h3>Email</h3>
+            <p>You can email us at <a href="mailto:info@hotelbooking.com">info@hotelbooking.com</a></p>
+            
+            <h3>Phone</h3>
+            <p>Call us at <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            
+            <h3>Address</h3>
+            <p>Visit us at:</p>
+            <address>
+                123 Hotel Street<br>
+                City, State, 12345<br>
+                Country
+            </address>
+            
+            <h3>Social Media</h3>
+            <div class="social">
+                <a href="https://www.facebook.com/hotelbooking" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/733/733547.svg" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com/hotelbooking" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/733/733579.svg" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/hotelbooking" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/733/733558.svg" alt="Instagram">
+                </a>
+            </div>
+            
+            <h3>Contact Form</h3>
+            <form action="/submit_form" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
